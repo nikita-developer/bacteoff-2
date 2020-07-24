@@ -1,0 +1,89 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-bottom: 120px;
+        background-image: url("../media/section/face.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    &_clear {
+        padding-bottom: 150px;
+        background-image: url("../media/section/clear.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    &_infected {
+        padding-top: 150px;
+    }
+
+    &_parasites {
+        background-image: url("../media/section/parasites.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    &_who {
+        background-image: url("../media/section/who.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.section__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+}
+
+@media (max-width: 1030px) {
+    .section {
+        &_clear {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-image: url("../media/section/clear-1030.jpg");
+            background-position: center top;
+        }
+    }
+
+    .section__title {
+        font-size: 40px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_clear {
+            background-image: url("../media/section/clear-768.jpg");
+            background-position: center bottom;
+        }
+    }
+
+    .section__title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_clear {
+            background-image: url("../media/section/clear-480.jpg");
+        }
+    }
+
+    .section__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+}
