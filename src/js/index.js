@@ -105,7 +105,6 @@ $(document).ready(function() {
 
     if($csrollTop > $offsetTop - 200) {
         $('.count__body').addClass('count__body_active');
-        console.log($csrollTop, $offsetTop);
     } else {
         $('.count__body').removeClass('count__body_active');
     }
@@ -116,7 +115,6 @@ $(document).ready(function() {
 
         if($csrollTop > $offsetTop - 200) {
             $('.count__body').addClass('count__body_active');
-            console.log($csrollTop, $offsetTop);
         } else {
             $('.count__body').removeClass('count__body_active');
         }
