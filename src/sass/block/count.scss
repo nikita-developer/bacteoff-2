@@ -8,7 +8,7 @@
     background-color: #ebebeb;
     box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, .3);
     background-image: url("../media/count/skull.png");
-    background-repeat: no-repeat;
+    
     background-position: calc(100% - 42px) center;
 
     &_active {
@@ -69,6 +69,7 @@
 }
 
 .count__full-number {
+    transform: translateY(0);
     transition: .3s transform;
 
     & + & {
@@ -174,6 +175,40 @@
 
     .count__body  {
         background-position: calc(100% - 30px) center;
+
+        &_active {
+            & .count__full-number_1 {
+                transform: translateY(-1080px);
+            }
+
+            & .count__full-number_2 {
+                transform: translateY(-1800px);
+            }
+
+            & .count__full-number_3 {
+                transform: translateY(-2700px);
+            }
+
+            & .count__full-number_4 {
+                transform: translateY(-3600px);
+            }
+
+            & .count__full-number_5 {
+                transform: translateY(-4500px);
+            }
+
+            & .count__full-number_6 {
+                transform: translateY(-5760px);
+            }
+
+            & .count__full-number_7 {
+                transform: translateY(-6750px);
+            }
+
+            & .count__full-number_8 {
+                transform: translateY(-8010px);
+            }
+        }
     }
 }
 
@@ -195,6 +230,40 @@
     .count__body  {
         padding: 30px 15px 130px 15px;
         background-position: center calc(100% - 18px);
+
+        &_active {
+            & .count__full-number_1 {
+                transform: translateY(-960px);
+            }
+
+            & .count__full-number_2 {
+                transform: translateY(-1600px);
+            }
+
+            & .count__full-number_3 {
+                transform: translateY(-2400px);
+            }
+
+            & .count__full-number_4 {
+                transform: translateY(-3200px);
+            }
+
+            & .count__full-number_5 {
+                transform: translateY(-4000px);
+            }
+
+            & .count__full-number_6 {
+                transform: translateY(-5120px);
+            }
+
+            & .count__full-number_7 {
+                transform: translateY(-6000px);
+            }
+
+            & .count__full-number_8 {
+                transform: translateY(-7120px);
+            }
+        }
     }
 
     .count__number-box {
@@ -239,6 +308,42 @@
     .count__full-number {
         & + & {
             margin-left: 3px;
+        }
+    }
+
+    .count__body  {
+        &_active {
+            & .count__full-number_1 {
+                transform: translateY(-600px);
+            }
+
+            & .count__full-number_2 {
+                transform: translateY(-1000px);
+            }
+
+            & .count__full-number_3 {
+                transform: translateY(-1500px);
+            }
+
+            & .count__full-number_4 {
+                transform: translateY(-2000px);
+            }
+
+            & .count__full-number_5 {
+                transform: translateY(-2500px);
+            }
+
+            & .count__full-number_6 {
+                transform: translateY(-3200px);
+            }
+
+            & .count__full-number_7 {
+                transform: translateY(-3750px);
+            }
+
+            & .count__full-number_8 {
+                transform: translateY(-4450px);
+            }
         }
     }
 }

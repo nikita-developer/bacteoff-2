@@ -6,7 +6,7 @@
     &_face {
         padding-bottom: 120px;
         background-image: url("../media/section/face.jpg");
-        background-repeat: no-repeat;
+
         background-size: cover;
         background-position: center bottom;
     }
@@ -14,7 +14,7 @@
     &_clear {
         padding-bottom: 150px;
         background-image: url("../media/section/clear.jpg");
-        background-repeat: no-repeat;
+
         background-size: cover;
         background-position: center bottom;
     }
@@ -25,14 +25,14 @@
 
     &_parasites {
         background-image: url("../media/section/parasites.jpg");
-        background-repeat: no-repeat;
+
         background-size: cover;
         background-position: center center;
     }
 
     &_who {
         background-image: url("../media/section/who.jpg");
-        background-repeat: no-repeat;
+
         background-size: cover;
         background-position: center center;
     }
@@ -69,6 +69,38 @@
             background-color: rgba(0, 0, 0, .6);
         }
     }
+
+    &_count {
+        padding-bottom: 120px;
+        background-image: url("../media/section/count.jpg");
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    &_protect {
+        padding-top: 140px;
+        padding-bottom: 140px;
+        background-image: url("../media/section/protect.jpg");
+        background-size: cover;
+        background-position: center top;
+    }
+
+    &_info {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    &_ingredients {
+        background-image: url("../media/section/ingredients.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &_garant {
+        background-image: url("../media/section/garant.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 .section__title {
@@ -84,6 +116,14 @@
             background-image: url("../media/section/clear-1030.jpg");
             background-position: center top;
         }
+
+        &_count {
+            padding-bottom: 60px;
+        }
+
+        &_protect {
+            background-image: url("../media/section/protect-1030.jpg");
+        }
     }
 
     .section__title {
@@ -97,6 +137,12 @@
         &_clear {
             background-image: url("../media/section/clear-768.jpg");
             background-position: center bottom;
+        }
+
+        &_protect {
+            padding-top: 0;
+            padding-bottom: 60px;
+            background-image: url("../media/section/protect-768.jpg");
         }
     }
 
@@ -112,6 +158,10 @@
 
         &_clear {
             background-image: url("../media/section/clear-480.jpg");
+        }
+
+        &_protect {
+            background-image: url("../media/section/protect-480.jpg");
         }
     }
 

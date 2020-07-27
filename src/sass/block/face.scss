@@ -56,7 +56,7 @@
         width: 32px;
         height: 32px;
         content: '';
-        background-repeat: no-repeat;
+        
     }
 
     &:nth-child(1) {
@@ -136,7 +136,7 @@
         margin-left: 75px;
         content: '';
         background-image: url("../media/product-before.png");
-        background-repeat: no-repeat;
+        
         background-size: cover;
         transform: translateX(-50%);
     }
