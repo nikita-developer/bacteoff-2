@@ -19,9 +19,8 @@
 .job__item {
     flex: 0 0 calc(33.333% - 20px);
     padding: 260px 40px 40px;
-    border: 2px solid #000;
-    
     background-position: center top;
+    border: 2px solid #000;
 
     &:nth-child(1) {
         background-image: url("../media/job/img-1.jpg");
@@ -43,8 +42,8 @@
 }
 
 .job__description {
-    font-weight: 500;
     font-size: 20px;
+    font-weight: 500;
 }
 
 @media (max-width: 1030px) {

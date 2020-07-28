@@ -56,7 +56,6 @@
         width: 32px;
         height: 32px;
         content: '';
-        
     }
 
     &:nth-child(1) {
@@ -111,15 +110,14 @@
         left: 0;
         width: 50px;
         height: 4px;
-        border-radius: 5px;
         content: '';
         background-color: #2da761;
+        border-radius: 5px;
     }
 }
 
 .face__product {
     position: absolute;
-    z-index: 1;
     bottom: -100px;
     left: 50%;
     z-index: 1;
@@ -128,15 +126,14 @@
 
     &::before {
         position: absolute;
+        bottom: -15px;
         left: 50%;
-        bottom: 30px;
         z-index: -1;
         width: 602px;
         height: 531px;
-        margin-left: 75px;
+        margin-left: 50px;
         content: '';
         background-image: url("../media/product-before.png");
-        
         background-size: cover;
         transform: translateX(-50%);
     }
@@ -148,7 +145,7 @@
     }
 
     .face__product {
-        max-width: 400px;
+        max-width: 300px;
         margin-left: -50px;
 
         &::before {
@@ -191,11 +188,11 @@
         position: relative;
         bottom: -15px;
         left: auto;
+        flex: 0 0 200px;
+        order: 4;
         margin-top: -60px;
         margin-left: 0;
-        flex: 0 0 200px;
         transform: translateX(0);
-        order: 4;
 
         &::before {
             display: none;
@@ -203,14 +200,14 @@
     }
 
     .face__list {
-        order: 3;
         flex: 0 0 50%;
+        order: 3;
         margin-bottom: 0;
     }
 
     .face__eags {
-        margin-top: 60px;
         order: 5;
+        margin-top: 0;
     }
 
     .face__box {
@@ -222,13 +219,13 @@
 }
 
 @media (max-width: 480px) {
-    .face__check {
-        font-size: 18px;
+    .face__title {
+        margin-bottom: 0;
     }
 
     .face__check {
-        font-size: 14px;
         padding-left: 35px;
+        font-size: 14px;
 
         &::before {
             width: 25px;
@@ -237,9 +234,19 @@
         }
     }
 
+    .face__list {
+        flex: 0 0 calc(100% - 140px);
+        padding-top: 30px;
+        margin-top: auto;
+    }
+
+    .face__eags {
+        margin-top: 60px;
+    }
+
     .face__product {
+        flex: 0 0 125px;
         margin-top: 0;
-        flex: 0 0 47%;
-        margin-right: auto;
+        margin-left: auto;
     }
 }

@@ -38,9 +38,9 @@
 
 .ingredients__media {
     display: inline-block;
-    margin-bottom: 10px;
     width: 90px;
     height: 90px;
+    margin-bottom: 10px;
 }
 
 .ingredients__name {
@@ -58,24 +58,23 @@
 
 .ingredients__product {
     position: absolute;
-    z-index: 1;
     top: 50%;
     left: 50%;
+    z-index: 1;
     max-width: 358px;
     margin-top: 50px;
     transform: translate(-50%, -50%);
 
     &::before {
         position: absolute;
-        left: 50%;
         bottom: -25px;
+        left: 50%;
         z-index: -1;
         width: 602px;
         height: 531px;
         margin-left: 49px;
         content: '';
         background-image: url("../media/product-before.png");
-        
         background-size: cover;
         transform: translateX(-50%);
     }
@@ -126,12 +125,12 @@
 
 @media (max-width: 480px) {
     .ingredients__body {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        position: relative;
-        padding-left: 100px;
         max-width: 100%;
+        padding-left: 100px;
     }
 
     .ingredients__media {

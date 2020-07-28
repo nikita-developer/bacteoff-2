@@ -15,8 +15,7 @@ $(document).ready(function() {
 
     $('.js-commits__box').owlCarousel({
         loop: true,
-        margin: 20,
-        autoHeight: true,
+        margin: 45,
         responsive : {
             320 : {
                 items: 1

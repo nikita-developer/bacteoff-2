@@ -6,17 +6,15 @@
     &_face {
         padding-bottom: 120px;
         background-image: url("../media/section/face.jpg");
-
-        background-size: cover;
         background-position: center bottom;
+        background-size: cover;
     }
 
     &_clear {
         padding-bottom: 150px;
         background-image: url("../media/section/clear.jpg");
-
-        background-size: cover;
         background-position: center bottom;
+        background-size: cover;
     }
 
     &_infected {
@@ -25,16 +23,14 @@
 
     &_parasites {
         background-image: url("../media/section/parasites.jpg");
-
-        background-size: cover;
         background-position: center center;
+        background-size: cover;
     }
 
     &_who {
         background-image: url("../media/section/who.jpg");
-
-        background-size: cover;
         background-position: center center;
+        background-size: cover;
     }
 
     &_video {
@@ -73,16 +69,16 @@
     &_count {
         padding-bottom: 120px;
         background-image: url("../media/section/count.jpg");
-        background-size: cover;
         background-position: center bottom;
+        background-size: cover;
     }
 
     &_protect {
         padding-top: 140px;
         padding-bottom: 140px;
         background-image: url("../media/section/protect.jpg");
-        background-size: cover;
         background-position: center top;
+        background-size: cover;
     }
 
     &_info {
@@ -92,14 +88,18 @@
 
     &_ingredients {
         background-image: url("../media/section/ingredients.jpg");
-        background-size: cover;
         background-position: center center;
+        background-size: cover;
     }
 
     &_garant {
         background-image: url("../media/section/garant.jpg");
-        background-size: cover;
         background-position: center center;
+        background-size: cover;
+    }
+
+    &_delivery {
+        padding-top: 0;
     }
 }
 
@@ -122,7 +122,13 @@
         }
 
         &_protect {
+            padding-top: 0;
             background-image: url("../media/section/protect-1030.jpg");
+        }
+
+        &_warning {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 
@@ -134,9 +140,28 @@
 
 @media (max-width: 768px) {
     .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
         &_clear {
             background-image: url("../media/section/clear-768.jpg");
             background-position: center bottom;
+        }
+
+        &_info {
+            padding-bottom: 0;
+        }
+
+        &_ingredients {
+            padding-bottom: 0;
+        }
+
+        &_commits {
+            padding-bottom: 0;
+        }
+
+        &_delivery {
+            padding-bottom: 0;
         }
 
         &_protect {
@@ -162,6 +187,18 @@
 
         &_protect {
             background-image: url("../media/section/protect-480.jpg");
+        }
+
+        &_count {
+            padding-bottom: 0;
+        }
+
+        &_delivery {
+            padding-bottom: 0;
+        }
+
+        &_warning {
+            padding-bottom: 0;
         }
     }
 

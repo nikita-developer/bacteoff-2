@@ -2,14 +2,13 @@
 .count__body {
     max-width: 940px;
     padding: 30px 130px 30px 30px;
-    margin-bottom: 40px;
     margin-right: auto;
+    margin-bottom: 40px;
     margin-left: auto;
     background-color: #ebebeb;
-    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, .3);
     background-image: url("../media/count/skull.png");
-    
     background-position: calc(100% - 42px) center;
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, .3);
 
     &_active {
         & .count__full-number_1 {
@@ -69,8 +68,8 @@
 }
 
 .count__full-number {
-    transform: translateY(0);
     transition: .3s transform;
+    transform: translateY(0);
 
     & + & {
         margin-left: 6px;
@@ -79,31 +78,31 @@
 
 .count__number {
     position: relative;
-    width: 80px;
-    height: 120px;
     display: flex;
     flex-direction: column;
+    width: 80px;
+    height: 120px;
+    background-color: #292929;
     border: 3px solid #c5c5c5;
     border-radius: 2px;
-    background-color: #292929;
 
     &::before {
         position: absolute;
         width: 100%;
         height: 100%;
+        content: '';
         border: 3px solid #292929;
         border-radius: 2px;
-        content: '';
     }
 }
 
 .count__number-top {
     width: calc(100% - 6px);
-    margin-left: 3px;
-    border-radius: 0  0 3px 3px;
     height: 50%;
-    background: rgb(148,148,148);
-    background: -webkit-linear-gradient(bottom, rgba(148,148,148,1) 0%, rgba(27,27,27,1) 100%);
+    margin-left: 3px;
+    background-color: rgb(148, 148, 148);
+    background-image: -webkit-linear-gradient(bottom, rgba(148, 148, 148, 1) 0%, rgba(27, 27, 27, 1) 100%);
+    border-radius: 0  0 3px 3px;
 }
 
 .count__number-text {
@@ -120,12 +119,12 @@
 
 .count__number-bot {
     width: calc(100% - 6px);
-    margin-left: 3px;
-    margin-bottom: 3px;
-    border-radius: 0  0 3px 3px;
     height: 50%;
-    background: rgb(79,79,79);
-    background: linear-gradient(0deg, rgba(79,79,79,1) 0%, rgba(93,93,93,1) 28%, rgba(41,41,41,1) 71%, rgba(41,41,41,1) 100%);
+    margin-bottom: 3px;
+    margin-left: 3px;
+    background-color: rgb(79, 79, 79);
+    background-image: linear-gradient(0deg, rgba(79, 79, 79, 1) 0%, rgba(93, 93, 93, 1) 28%, rgba(41, 41, 41, 1) 71%, rgba(41, 41, 41, 1) 100%);
+    border-radius: 0  0 3px 3px;
 }
 
 .count__title {
@@ -148,12 +147,12 @@
 
             &::before {
                 position: absolute;
-                left: 0;
                 bottom: -5px;
+                left: 0;
                 width: 180px;
                 height: 5px;
-                background-image: url("../media/count/line.png");
                 content: '';
+                background-image: url("../media/count/line.png");
             }
         }
     }
@@ -164,7 +163,7 @@
         height: 90px;
     }
 
-    .count__number  {
+    .count__number {
         width: 58px;
         height: 90px;
     }
@@ -173,7 +172,7 @@
         font-size: 68px;
     }
 
-    .count__body  {
+    .count__body {
         background-position: calc(100% - 30px) center;
 
         &_active {
@@ -217,7 +216,7 @@
         height: 80px;
     }
 
-    .count__number  {
+    .count__number {
         width: 44px;
         height: 80px;
     }
@@ -227,7 +226,7 @@
         font-size: 50px;
     }
 
-    .count__body  {
+    .count__body {
         padding: 30px 15px 130px 15px;
         background-position: center calc(100% - 18px);
 
@@ -289,7 +288,7 @@
         height: 50px;
     }
 
-    .count__number  {
+    .count__number {
         width: 28px;
         height: 50px;
     }
@@ -305,13 +304,17 @@
         }
     }
 
+    .count__title {
+        margin-bottom: 0;
+    }
+
     .count__full-number {
         & + & {
             margin-left: 3px;
         }
     }
 
-    .count__body  {
+    .count__body {
         &_active {
             & .count__full-number_1 {
                 transform: translateY(-600px);
