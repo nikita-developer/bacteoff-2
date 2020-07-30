@@ -24,8 +24,7 @@
     position: relative;
     font-size: 152px;
     line-height: 146px;
-    color: #fff;
-    -webkit-text-stroke: 4px #ff0042;
+    color: #ff0042;
     letter-spacing: 8px;
 
     & span {
@@ -36,9 +35,32 @@
         font-size: 280px;
         font-weight: 900;
         color: #f6f6f6;
-        -webkit-text-stroke: 0 transparent;
         letter-spacing: 0;
         transform: translate(-50%, -50%);
+    }
+}
+
+@supports (-webkit-text-stroke: 4px #ff0042) {
+    .infected__title-before {
+        position: relative;
+        font-size: 152px;
+        line-height: 146px;
+        color: #fff;
+        -webkit-text-stroke: 4px #ff0042;
+        letter-spacing: 8px;
+
+        & span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            font-size: 280px;
+            font-weight: 900;
+            color: #f6f6f6;
+            -webkit-text-stroke: 0 transparent;
+            letter-spacing: 0;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
@@ -187,10 +209,20 @@
 
     .infected__title-before {
         font-size: 36px;
-        -webkit-text-stroke: 2px #ff0042;
 
         & span {
             font-size: 70px;
+        }
+    }
+
+    @supports (-webkit-text-stroke: 2px #ff0042) {
+        .infected__title-before {
+            font-size: 36px;
+            -webkit-text-stroke: 2px #ff0042;
+
+            & span {
+                font-size: 70px;
+            }
         }
     }
 }
