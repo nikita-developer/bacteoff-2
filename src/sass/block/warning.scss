@@ -117,4 +117,10 @@
         width: 100%;
         max-width: 250px;
     }
+
+    .warning__box {
+        &:last-child {
+            text-align: left;
+        }
+    }
 }
