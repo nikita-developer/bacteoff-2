@@ -193,6 +193,7 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+        overflow-y: hidden;
 
         &_clear {
             background-image: url("../media/section/clear-480.jpg");

@@ -245,7 +245,9 @@
     }
 
     .face__product {
+        display: flex;
         flex: 0 0 125px;
+        align-items: center;
         margin-top: 0;
         margin-left: auto;
     }
